@@ -4,16 +4,16 @@
 
 #Email information
 send_mail=true
-from_email_address="cassadm@searshc.com"
-to_email_address="ecom_nosql@searshc.com"
+from_email_address="from@some_example.com"
+to_email_address="to@some_example.com"
 
 #number of attempts information
 max_attempts=3
-max_attempt_file_path=/opt/cassandra/bin/attempts
+max_attempt_file_path=/usr/cassandra/bin/attempts
 interval=5
 
 #Log information
-export log_folder_path=/opt/cassandra/bin/restart_logs
+export log_folder_path=/usr/cassandra/bin/restart_logs
 log=`date +%d_%m_%Y`
 logname="restart_"$log".log"
 log_path=$log_folder_path"/"$logname
@@ -55,8 +55,8 @@ fi
 
 
 
-export cassandra_bin_path=/opt/cassandra/instance/bin
-export cassandra_conf_path=/opt/cassandra/instance/conf
+export cassandra_bin_path=/usr/cassandra/instance/bin
+export cassandra_conf_path=/usr/cassandra/instance/conf
 
 log=`date +%d_%m_%Y`
 logname="stop_"$log".log"
