@@ -24,7 +24,7 @@ fi
 
 
 days=$1
-export DataDir=/opt/cassandra/data
+export DataDir=/usr/cassandra/data
 export cassandra_bin_path=/usr/cassandra/instance/bin
 export log_dir=/usr/cassandra/bin/clearsnapshot_logs
 send_mail=false
